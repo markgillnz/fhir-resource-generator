@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "max-len": ["error", 140]
+  },
+  "env": {
+    "node": true
+  }
+}
