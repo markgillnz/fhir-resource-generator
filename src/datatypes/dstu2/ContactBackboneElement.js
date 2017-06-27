@@ -1,11 +1,11 @@
 import faker from 'faker';
 import R from 'ramda';
 
-import HumanName from '../datatypes/HumanName';
-import ContactPoint from '../datatypes/ContactPoint';
-import Address from '../datatypes/Address';
-import AdministrativeGender from '../datatypes/AdministrativeGender';
-import CodeableConcept from '../datatypes/CodeableConcept';
+import HumanName from './HumanName';
+import ContactPoint from './ContactPoint';
+import Address from './Address';
+import AdministrativeGender from './AdministrativeGender';
+import CodeableConcept from './CodeableConcept';
 
 const ContactBackboneElement = () => {
   const relationship = faker.random.number({ min: 1, max: 1 }) ? R.times(CodeableConcept, 1) : '';

@@ -2,13 +2,13 @@ import faker from 'faker';
 import R from 'ramda';
 import moment from 'moment';
 
-import HumanName from '../datatypes/HumanName';
-import Identifier from '../datatypes/Identifier';
-import ContactPoint from '../datatypes/ContactPoint';
-import Address from '../datatypes/Address';
-import AdministrativeGender from '../datatypes/AdministrativeGender';
-import CodeableConcept from '../datatypes/CodeableConcept';
-import ContactBackboneElement from '../datatypes/ContactBackboneElement';
+import HumanName from '../../datatypes/dstu2/HumanName';
+import Identifier from '../../datatypes/dstu2/Identifier';
+import ContactPoint from '../../datatypes/dstu2/ContactPoint';
+import Address from '../../datatypes/dstu2/Address';
+import AdministrativeGender from '../../datatypes/dstu2/AdministrativeGender';
+import CodeableConcept from '../../datatypes/dstu2/CodeableConcept';
+import ContactBackboneElement from '../../datatypes/dstu2/ContactBackboneElement';
 
 const fhirPatient = () => {
   const birthDate = moment(faker.date.past(100)).format('YYYY-MM-DD');
