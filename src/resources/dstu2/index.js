@@ -1,5 +1,7 @@
 import patient from './patient';
+import allergyIntolerance from './allergyIntolerance';
 
 export {
-  patient, // eslint-disable-line import/prefer-default-export
+  patient,
+  allergyIntolerance,
 };
