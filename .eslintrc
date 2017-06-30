@@ -1,9 +1,13 @@
 {
   "extends": "airbnb",
+  "plugins": [
+    "jest"
+  ],
   "rules": {
     "max-len": ["error", 140]
   },
   "env": {
+    "jest/globals": true,
     "node": true
   }
 }

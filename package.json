@@ -10,7 +10,7 @@
     "build": "npm run lint && npm run compile",
     "compile": "babel-compile --preset env src:dist",
     "lint": "eslint src/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +22,10 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.0.1"
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.4"
   },
   "dependencies": {
     "faker": "^4.1.0",
