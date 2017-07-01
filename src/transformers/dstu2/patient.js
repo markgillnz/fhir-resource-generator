@@ -7,6 +7,7 @@ import ContactPoint from '../../datatypes/dstu2/ContactPoint';
 import Address from '../../datatypes/dstu2/Address';
 import AdministrativeGender from '../../datatypes/dstu2/AdministrativeGender';
 import ContactBackboneElement from '../../datatypes/dstu2/ContactBackboneElement';
+import CodeableConcept from '../../datatypes/dstu2/CodeableConcept';
 import { getDateBefore, getDateTimeInPastAfter } from '../../utils/datetime';
 
 const transformer = {
@@ -18,6 +19,9 @@ const transformer = {
   deceasedBoolean: () => faker.random.boolean(),
   deceasedDateTime: date => getDateTimeInPastAfter(date),
   address: count => R.times(Address, count),
+  maritalStatus: () => CodeableConcept(),
+  multipleBirthBoolean: () => faker.random.boolean(),
+  multipleBirthInteger: () => faker.random.number({ min: 0, max: 5 }),
   contact: count => R.times(ContactBackboneElement, count),
 };
 const availableFields = R.keys(transformer);
