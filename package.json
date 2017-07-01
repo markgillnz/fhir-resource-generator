@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "build": "npm run lint && npm run compile",
-    "compile": "babel src --out-dir dist --source-maps",
-    "develop": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist --source-maps",
+    "develop": "nodemon --exec babel-node develop.js",
     "lint": "eslint src/",
-    "test": "jest"
+    "test": "jest",
+    "prebuild": "npm run lint"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mark Gill",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
