@@ -18,6 +18,7 @@
   "keywords": [],
   "author": "Mark Gill",
   "license": "ISC",
+  "repository": "https://github.com/markgillnz/fhir-resource-generator",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
