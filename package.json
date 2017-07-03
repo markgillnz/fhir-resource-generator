@@ -1,9 +1,11 @@
 {
   "name": "fhir-resource-generator",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Generate random FHIR resources",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "babel src --out-dir dist --source-maps",
     "clean": "rm -rf dist/",
@@ -11,10 +13,7 @@
     "lint": "eslint src/",
     "test": "jest",
     "prebuild": "npm run clean && npm run test",
-    "pretest": "npm run lint",
-    "prepublish": "npm run build",
-    "preversion": "npm test",
-    "postversion": "git push && git push --tags"
+    "pretest": "npm run lint"
   },
   "keywords": [],
   "author": "Mark Gill",
