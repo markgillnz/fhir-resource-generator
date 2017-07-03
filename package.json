@@ -6,10 +6,15 @@
   "files": ["dist"],
   "scripts": {
     "build": "babel src --out-dir dist --source-maps",
+    "clean": "rm -rf dist/",
     "develop": "nodemon --exec babel-node develop.js",
     "lint": "eslint src/",
     "test": "jest",
-    "prebuild": "npm run lint"
+    "prebuild": "npm run clean && npm run test",
+    "pretest": "npm run lint",
+    "prepublish": "npm run build",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [],
   "author": "Mark Gill",
