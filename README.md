@@ -2,6 +2,9 @@
 
 Generate random FHIR resources
 
+[![Build Status](https://travis-ci.org/markgillnz/fhir-resource-generator.svg?branch=master)](https://travis-ci.org/markgillnz/fhir-resource-generator)
+[![npm version](https://badge.fury.io/js/fhir-resource-generator.svg)](https://badge.fury.io/js/fhir-resource-generator)
+
 ## Installation
 
 ```
