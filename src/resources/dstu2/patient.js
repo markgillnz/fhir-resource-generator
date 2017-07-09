@@ -11,7 +11,7 @@ const patient = (fields, overrides) => R.compose(
     ['deceasedBoolean', 'deceasedDateTime'],
     ['multipleBirthBoolean', 'multipleBirthInteger'],
   ]),
-  R.merge({ resourceType: 'Patient', id: faker.random.uuid(), active: true }),
+  R.merge({ resourceType: 'Patient', id: faker.random.uuid() }),
   R.evolve(transformer),
   R.ifElse(
     R.isNil,

@@ -11,6 +11,7 @@ import CodeableConcept from '../../datatypes/dstu2/CodeableConcept';
 import { getDateBefore, getDateTimeInPastAfter } from '../../utils/datetime';
 
 const transformer = {
+  active: () => faker.random.boolean(),
   identifier: count => R.times(Identifier, count),
   name: count => R.times(HumanName, count),
   telecom: count => R.times(ContactPoint, count),
