@@ -1,6 +1,6 @@
 {
   "name": "fhir-resource-generator",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Generate random FHIR resources",
   "main": "dist/index.js",
   "files": [
