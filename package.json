@@ -14,7 +14,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prebuild": "npm run clean && npm run test",
-    "pretest": "npm run lint"
+    "pretest": "npm run lint",
+    "preversion": "npm run build"
   },
   "keywords": [],
   "author": "Mark Gill",
